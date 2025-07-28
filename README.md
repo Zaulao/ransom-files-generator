@@ -18,3 +18,16 @@ options:
   -r REPEAT, --repeat REPEAT
                         times to walk over created files and directories
 ```
+
+# Docker usage
+
+1. Build the image:
+```shell
+sudo docker build -t ransom-files-generator .
+
+```
+
+2. Execute the script:
+```shell
+sudo docker run -v $PWD/ransom_files:/app/ransom_files ransom-files-generator
+```
